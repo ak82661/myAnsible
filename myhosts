@@ -10,3 +10,7 @@
 172.31.4.118
 172.31.8.28
 
+[mywebserver:vars]
+mywebpackonubuntu=apache2222
+mywebpackonredhat=httpd
+
