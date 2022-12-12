@@ -15,6 +15,13 @@
     apt: 
       name: apache2
       state: present
+
+  - name: Download file and force basic auth
+    get_url:
+    url: https://730ttbkt.s3.ap-south-1.amazonaws.com/pic4.jpg
+    dest: /home/ubuntu/ 
+    force_basic_auth: yes
+
   - name: copy dynamic file into node side
     template: 
          src: myindex.j2
